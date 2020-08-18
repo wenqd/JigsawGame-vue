@@ -94,7 +94,7 @@ export default {
                     value:'customQQ',
                     lable:'q',
                     title:'QQ头像',
-                    url:""
+                    url:"require('../assets/qq.jpg')"
                 }
             ],
             list: [
@@ -134,14 +134,17 @@ export default {
     watch: {
         svalue(newval,oldval){
             if(newval==="customQQ"){
-                this.getQQUrl()
-            }
-            this.assets.map(item=>{
+                if(this.qq!==""){
+                    this.getQQUrl()
+                }
+            }else{
+                this.assets.map(item=>{
                 if(item.value === newval){
                     this.imgUrl = item.url
                 }
-            })
-            this.start()
+                })
+                this.start()
+            }
         }
     },
     created() {
@@ -151,6 +154,7 @@ export default {
     },
     methods: {
         start(){
+            window.clearInterval(timer)
             this.visible=true
             this.step=0;
             this.msg="";
