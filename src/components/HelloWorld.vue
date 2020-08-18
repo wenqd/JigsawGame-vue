@@ -259,8 +259,7 @@ export default {
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto;
-    top: 100px;
+    margin: 0 auto;
 }
 .hello {
     display: flex;
