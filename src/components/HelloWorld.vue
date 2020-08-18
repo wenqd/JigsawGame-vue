@@ -99,39 +99,30 @@ export default {
             ],
             list: [
                 {
-                    url: require("../assets/1/壁纸1_0.jpg"),
                     id: 0,
                 },
                 {
-                    url: require("../assets/1/壁纸1_1.jpg"),
                     id: 1,
                 },
                 {
-                    url: require("../assets/1/壁纸1_2.jpg"),
                     id: 2,
                 },
                 {
-                    url: require("../assets/1/壁纸1_3.jpg"),
                     id: 3,
                 },
                 {
-                    url: require("../assets/1/壁纸1_4.jpg"),
                     id: 4,
                 },
                 {
-                    url: require("../assets/1/壁纸1_5.jpg"),
                     id: 5,
                 },
                 {
-                    url: require("../assets/1/壁纸1_6.jpg"),
                     id: 6,
                 },
                 {
-                    url: require("../assets/1/壁纸1_7.jpg"),
                     id: 7,
                 },
                 {
-                    url: require("../assets/1/壁纸1_8.jpg"),
                     id: 8,
                 },
             ],
