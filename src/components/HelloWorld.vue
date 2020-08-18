@@ -133,6 +133,7 @@ export default {
     watch: {
         svalue(newval,oldval){
             if(newval==="customQQ"){
+                this.imgUrl=""
                 if(this.qq!==""){
                     this.getQQUrl()
                 }
@@ -153,6 +154,10 @@ export default {
     },
     methods: {
         start(){
+            if(this.imgUrl===""){
+                alert("请输入QQ号码然后点开始")
+                return
+            }
             window.clearInterval(timer)
             this.visible=true
             this.step=0;
