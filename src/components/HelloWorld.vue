@@ -12,7 +12,6 @@
                     v-model="svalue"
                     :options="assets"
                 >
-                    <a-icon slot="suffixIcon" type="smile" />
                 </a-select>
             </a-col>
             <a-col :span="16" v-show="svalue == 'customQQ'">
